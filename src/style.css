@@ -1,0 +1,39 @@
+.loader {
+    display: none;
+}
+
+.error {
+    display: none;
+    color: red;
+
+ }
+
+ .breed-select {
+    
+  margin-bottom: 10px;
+}
+
+  .cat-info-container {
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.cat-photo-container {
+  display: flex;
+  text-align: left;
+}
+ 
+.cat-photo {
+    
+    margin-right: 20px;
+}
+
+  .cat-details {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
