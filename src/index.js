@@ -1,5 +1,4 @@
 import axios from "axios";
-import Notiflix from 'notiflix';
 import {fetchCatByBreed} from "./cat-api.js";
 import{fetchBreeds} from "./cat-api.js"
 
@@ -28,7 +27,7 @@ fetch('https://api.thecatapi.com/v1/breeds')
     })
     .catch(error => {
       hideLoader();
-      showError('Error fetching cat breeds' + error.message);
+      showError(error.message);
     });
 
     const showLoader = () => {
@@ -75,7 +74,8 @@ fetch('https://api.thecatapi.com/v1/breeds')
           `;
       }) .catch(error => {
         hideLoader();
-        showError("Error: " + error.message);
+        catInfo.style.display = 'none';
+        showError('Oops! Something went wrong! Try reloading the page!');
       });
   }
 });
